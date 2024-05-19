@@ -4,7 +4,7 @@ namespace App\Mapper;
 
 abstract class AbstractMapper
 {
-    public static function from(array | object $data): static
+    public static function from(array $data): static
     {
         $reflectionClass = new \ReflectionClass(static::class);
         $parameters = [];
